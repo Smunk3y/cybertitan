@@ -11,7 +11,7 @@ Invoke-WebRequest -Uri $readme -Outfile readme.txt
 
 Remove-Variable readme, readme_path
 
-$password = "P0stM0rtem!"
+$password = "Spac3!5"
 
 $whitelist_block = Get-Content -Raw -Path "readme.txt" | Select-String -Pattern '<b>Authorized Administrators(?:.|\n)*?(?=<\/pre)';
 $is_admin = $true
